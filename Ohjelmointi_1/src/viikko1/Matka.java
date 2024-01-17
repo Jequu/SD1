@@ -6,13 +6,16 @@ public class Matka {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        DecimalFormat dec = new DecimalFormat("#,###.##");
-        System.out.println("Anna matka: ");
-        int matka = scanner.nextInt();
-        System.out.println("Anna nopeus: ");
+        DecimalFormat formatti = new DecimalFormat("0.00");
+        System.out.print("Anna matka: ");
+        double matka = scanner.nextDouble();
+        System.out.print("Anna nopeus: ");
         double nopeus = scanner.nextDouble();
-        double aika = (double)(matka / nopeus);
-        System.out.println("Aikaa menee " + dec.format(aika));
+        double aika = (double)matka / nopeus;
+        System.out.print("Aikaa menee " + formatti.format(aika) + " tuntia");
+        scanner.close();
+
+        
 
 
     }
