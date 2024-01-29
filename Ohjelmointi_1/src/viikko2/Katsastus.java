@@ -31,5 +31,6 @@ public class Katsastus {
         }
 
         System.out.println("Hinta on " + hinta);
+        scanner.close();
     }
 }
