@@ -1,4 +1,4 @@
-
+package viikko3;
 import java.util.Scanner;
 
 public class Opintopisteet {
@@ -11,28 +11,28 @@ public class Opintopisteet {
         int opyhteensa = 0;
         
         for (int i = 1; i <= lukukaudet; i++){
-            System.out.println("Anna" + i + ". lukukauden opintopisteesi: ");
+            System.out.println("Anna " + i + ". lukukauden opintopisteesi: ");
             int op = scanner.nextInt();
             opyhteensa += op;
         }
         System.out.println("Sinulla pitäisi olla tähän mennessä " + lukukaudet*30 + " opintopistettä.");
         System.out.println("Sinulla on " + opyhteensa + " opintopistettä.");
-        int v2 =  opyhteensa-lukukaudet;
+        int vv =  opyhteensa-lukukaudet*30;
         int puutuva = 210 - opyhteensa;
-            if (v2 < 0) {
+            if (vv < 0) {
                 System.out.println("Olet jäljessä tavoitteesta.");
-                System.out.println("Tutkinnosta puuttuu vielä " + puutuva + " opintopistettä");
+                System.out.println("Tutkinnosta puuttuu vielä " + puutuva + " opintopistettä.");
 
-            } else if (v2 > 0) {
+            } else if (vv > 0) {
                 System.out.println("Olet edellä tavoitteesta.");
-                System.out.println("Tutkinnosta puuttuu vielä " + puutuva + " opintopistettä");
+                System.out.println("Tutkinnosta puuttuu vielä " + puutuva + " opintopistettä.");
 
             } else {
                 System.out.println("Olet tavoitteessa.");
-                System.out.println("Tutkinnosta puuttuu vielä " + puutuva + " opintopistettä");
+                System.out.println("Tutkinnosta puuttuu vielä " + puutuva + " opintopistettä.");
 
             }
-
+            scanner.close();
         
     }
 }
