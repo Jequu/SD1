@@ -19,11 +19,12 @@ public class Luottolaskuri {
         double era = hintaostos/kuukaudet;
         double luotto = hintaostos - era;
 
-            
-       for (int i = 1; hintaostos<= 0; i++) {
-        System.out.println( i + ". erä " + era + "euroa, luottoa jäljellä " + luotto + " euroa");
+        
+       for (int i = 1; i <= kuukaudet; i++) {
+        System.out.println( i + ". erä " + Dformat.format(era) + "euroa, luottoa jäljellä " + Dformat.format(luotto) + " euroa");
+        luotto -= era;
        }
-
+       scanner.close();
 
        
     }
