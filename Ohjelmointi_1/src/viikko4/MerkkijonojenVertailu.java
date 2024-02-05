@@ -14,5 +14,7 @@ public class MerkkijonojenVertailu {
         } else {
             System.out.println("Syötetyt merkkijonot eivät olleet samat!");
         }
+
+        lukija.close();
     }
 }
