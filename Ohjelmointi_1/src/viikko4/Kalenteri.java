@@ -25,5 +25,6 @@ public class Kalenteri {
             }
             System.out.println();
         }
+        scanner.close();
     }
 }
