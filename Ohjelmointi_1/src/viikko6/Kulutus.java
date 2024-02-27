@@ -5,37 +5,38 @@ import java.text.DecimalFormat;
 
 public class Kulutus {
 
-    int kysyKilometrit() {
+    public static void main(String[] args) {
+    
+        Scanner scanner = new Scanner(System.in);
+        int kilsat = kysyKilometrit();
+        double tankkaus = kysyTankkaus();
+        double kulutus = laskeKulutus(kilsat, tankkaus);
+        naytaKulutus(kulutus);
+        }
+
+    public static int kysyKilometrit() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Anna ajetut kilometrit: ");
-        int kilometrit1 = scanner.nextInt();
-        return kilometrit1;
+        return scanner.nextInt();
     }
 
-    double kysyTankkaus() {
+    public static double kysyTankkaus() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Anna tankattu määrä: ");
-        double maara = scanner.nextDouble();
-        return maara;
+        return scanner.nextDouble();
 
     }
 
-    double laskeKulutus(int kilometrit, double tankattu) {
-        int kilometrit = kysyKilometrit();
-        double tankattu = kysyTankkaus();
+    public static double laskeKulutus(int kilometrit, double tankattu) {
+        return tankattu/kilometrit*100;
     }
 
-    void naytaKulutus(double kulutus) {
-
+    public static void naytaKulutus(double kulutus) {
+        DecimalFormat Dform = new DecimalFormat("0.00");
+        System.out.println("Kulutus/100km on " + Dform.format(kulutus) + " litraa" );
         
     }
 
-    public static void main(String[] args) {
     
-    Scanner scanner = new Scanner(System.in);
-    DecimalFormat Dform = new DecimalFormat("0.00");
-
-    System.out.println("Anna ajetut kilometrit: ");
-    }
 
 }
