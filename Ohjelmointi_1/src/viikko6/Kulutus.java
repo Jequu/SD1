@@ -24,7 +24,6 @@ public class Kulutus {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Anna tankattu määrä: ");
         return scanner.nextDouble();
-
     }
 
     public static double laskeKulutus(int kilometrit, double tankattu) {
