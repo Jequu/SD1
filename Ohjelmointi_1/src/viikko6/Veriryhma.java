@@ -16,30 +16,29 @@ public class Veriryhma {
         System.out.println("Veriryhmän " + vlm + " luovutuksia oli " + lm);
 
 
+
     }
 
     public static int kysyVeriryhma(ArrayList<String> lista) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Anna veriryhmä (- lopettaa): ");
         int luovutus = 0;
-        String input = scanner.nextLine();
         while (true) {
-        
+            System.out.println("Anna veriryhmä (- lopettaa): ");
+            String input = scanner.nextLine();
             if (input.equals("-")) {
                 break;
             } else {
-            System.out.println("Anna veriryhmä (- lopettaa): ");
-            input = scanner.nextLine();
             lista.add(input);
             luovutus++;
             }
         }   
+        
      return luovutus;
     }
     public static int luovutusMaara(ArrayList<String> lista, String vlm) {
         int lmaara = 0; 
         for (String verir : lista) {
-            if (vlm.equals(verir))
+            if (verir.contains(vlm))
             lmaara++;
         }
 
