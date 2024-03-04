@@ -22,25 +22,25 @@ public class Veriryhma {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Anna veriryhmä (- lopettaa): ");
         int luovutus = 0;
-        String imput = scanner.nextLine();
+        String input = scanner.nextLine();
         while (true) {
         
-            if (imput.equals("-")) {
+            if (input.equals("-")) {
                 break;
             } else {
             System.out.println("Anna veriryhmä (- lopettaa): ");
-            imput = scanner.nextLine();
-            lista.add(imput);
+            input = scanner.nextLine();
+            lista.add(input);
             luovutus++;
             }
-        }
+        }   
      return luovutus;
     }
     public static int luovutusMaara(ArrayList<String> lista, String vlm) {
         int lmaara = 0; 
         for (String verir : lista) {
             if (vlm.equals(verir))
-            lmaara ++;
+            lmaara++;
         }
 
         return lmaara;
