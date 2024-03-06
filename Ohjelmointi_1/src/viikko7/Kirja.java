@@ -55,7 +55,7 @@ public class Kirja {
 
     @Override
     public String toString() {
-        String myString = "Kirja [nimi= " + getNimi() + ", isbn= " + getIsbn() + ", hinta= " + getHinta() + ", julkaisuvuosi= " + getJulkaisuvuosi() + "]";
+        String myString = "Kirja [nimi= " + getNimi() + ", isbn= " + getIsbn() + ", hinta= " + getHinta() + ", vuosi= " + getJulkaisuvuosi() + "]";
         return myString;
     }
 }
