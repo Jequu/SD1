@@ -1,4 +1,4 @@
-//package viikko7;
+package viikko7;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 

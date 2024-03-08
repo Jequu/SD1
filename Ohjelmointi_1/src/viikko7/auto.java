@@ -1,5 +1,6 @@
-/**
- * Tallenna tämä luokka itsellesi Auto.java-nimiseen tiedostoon.
+package viikko7;
+/** 
+* Tallenna tämä luokka itsellesi Auto.java-nimiseen tiedostoon.
  */
 public class Auto {
 
