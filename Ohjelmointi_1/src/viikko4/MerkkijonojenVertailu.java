@@ -18,3 +18,12 @@ public class MerkkijonojenVertailu {
         lukija.close();
     }
 }
+for (int i = 1; i<10; ++i) {
+    if (luku>scanner.nextInt()) {
+        lukux = scanner.nextInt();
+
+    } else if(luku<scanner.nextInt()) {
+
+    } else {
+        System.out.println("Luvut ovat epäjärjestyksessä.");
+    }
